@@ -1,0 +1,28 @@
+{
+  "name": "wikistacksql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "pg": "^5.1.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.23.3",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon -e html,js,css /Users/yo-seungjae/Documents/Fullstack/immersive/junior/wikistackSQL/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjaymoon15/wikistackSQL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sjaymoon15/wikistackSQL/issues"
+  },
+  "homepage": "https://github.com/sjaymoon15/wikistackSQL#readme"
+}
