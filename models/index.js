@@ -1,5 +1,5 @@
 var Sequelize = require("sequelize");
-var db = new Sequelize("postgres://localhost:5432/wikistacksql");
+var db = new Sequelize("postgres://localhost:5432/wikistack");
 
 var Page = db.define("page", {
 	title:{
@@ -28,6 +28,10 @@ var Page = db.define("page", {
 	}
 		}
 );
+
+Page.hook("beforeValidate", function(page, options){
+	page.urlTitle = page.title.trim().split(" ").join("_");
+});
 
 var User = db.define("user", {
 	name:{
